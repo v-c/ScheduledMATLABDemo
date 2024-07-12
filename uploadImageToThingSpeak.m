@@ -10,7 +10,7 @@ function result = uploadImageToThingSpeak
     
     if isequal(imageUploadStatus, true)
     % Write a random value to the channel's field 1 so we can track execution
-        thingSpeakWrite(2597280, rand(1),'WriteKey','8A9XM15T7JGIUT6P');
+        thingSpeakWrite(2597280, round(rand(1),2),'WriteKey','8A9XM15T7JGIUT6P');
         result = true;
     end      
 
